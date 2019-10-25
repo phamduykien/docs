@@ -30,7 +30,7 @@ services:
   #######################################
   kong-migration:
     image: kong:latest
-    command: "kong migrations up"
+    command: "kong migrations bootstrap"
     networks:
       - kong-net
     restart: on-failure
