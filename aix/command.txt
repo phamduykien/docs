@@ -1,0 +1,8 @@
+export PATH=/usr/lbin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:/sbin:/usr/java8_64/jre/bin:/usr/java8_64/bin:$PATH.
+
+
+
+
+nimon -s 30 -k -i 119.81.215.6 -p 8086 -x njmon -n
+create database "njmon"
+use njmon
