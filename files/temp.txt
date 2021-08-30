@@ -5,3 +5,10 @@ c1mythanh2.phumy.binhdinh@moet.edu.vn
 curl 'https://bumasapp.misa.vn/dictionary' \
   -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
   -H 'Cookie: x-sessionid=2b46d4d2eb3748be97ac89bc9e7e0ccc; misa_version=Test'
+
+
+demomisa@sdc.misa.com.vn
+12345678@Abc
+
+curl 'https://bumasapp.misa.vn/dictionary' \  
+  -H 'Cookie: x-sessionid=002fdd0281b24136aa854a6e1eab84ca; misa_version=Test'
