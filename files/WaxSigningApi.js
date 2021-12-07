@@ -75,13 +75,15 @@ class WaxSigningApi {
             serializedTransaction.forEach(element => {
                 arr.push(element);
             });
-            const signUrl = localStorage.getItem("signUrl");
+            
+            const signUrl = this.signUrl;
+            const accessToken=this.accessToken;
             const response = yield fetch(signUrl || `/wam/sign`, {
                 //credentials: "include",
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
-                    'x-access-token': localStorage.getItem("x-access-token"),
+                    'x-access-token': accessToken,
                 },
                 body: JSON.stringify({
                     "serializedTransaction": arr,
