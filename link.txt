@@ -1,1 +1,2 @@
 https://fastdl.mongodb.org/tools/db/mongodb-database-tools-windows-x86_64-100.1.1.zip
+https://software-download.microsoft.com/db/Win10_21H2_English_x64.iso?t=bed9c9de-cd35-4ea5-9d9b-dbe84c408f9d&e=1639181442&h=9ab36a2859632ac4c79a58674a113aaf
