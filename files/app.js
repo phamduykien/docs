@@ -15,7 +15,7 @@ function getDateString() {
 function logResponse(text) {
     const log = `${getDateString()} ${text}`;
     console.info(log);
-    fs.appendFile(filePath, log, (error) => {
+    fs.appendFile(filePath, log+"\r\n", (error) => {
         if (error) {
             console.log('An error occurred:', error);
         } else {
