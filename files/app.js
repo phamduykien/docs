@@ -1,3 +1,5 @@
+const fs = require('fs');
+const filePath = 'log.txt';
 
 function sleep(ms) {
     return new Promise((resolve) => {
@@ -8,6 +10,18 @@ function sleep(ms) {
 function getDateString() {
     const s = (new Date()).toLocaleTimeString();
     return s;
+}
+
+function logResponse(text) {
+    const log = `${getDateString()} ${text}`;
+    console.info(log);
+    fs.appendFile(filePath, log, (error) => {
+        if (error) {
+            console.log('An error occurred:', error);
+        } else {
+            console.log('Text appended to file successfully.');
+        }
+    });
 }
 async function getData() {
 
@@ -35,15 +49,14 @@ async function getData() {
             });
             if (res.ok) {
                 const data = await res.json();
-                console.info(getDateString() + " Request success")
+                logResponse('Request success');
             } else {
                 throw res;
             }
 
 
         } catch (errorResponse) {
-
-            console.error(`${getDateString()} Request fail ${errorResponse} - ${errorResponse.cause}`);
+            logResponse(`Request fail ${errorResponse} - ${errorResponse.cause}`);
         }
         await sleep(10000);
     }
