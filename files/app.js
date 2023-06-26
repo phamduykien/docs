@@ -31,8 +31,9 @@ async function getData() {
             res = await fetch("https://mimosaapp.misa.vn/api/g1/di/DiCacheConfigs", {
                 "headers": {
                     "accept": "application/json, text/plain, */*",
+                    "host":"mimosaapp.misa.vn",
                     "accept-language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7,fr-FR;q=0.6,fr;q=0.5",
-                    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMWM2OTY2NS0yYTgyLTQwNzItOWZiZS0xYTIzNjlkNTkwYjQiLCJkaWQiOiIxNDc5NTFkNC0zZmE1LTRmM2EtYmI2Ny0xNzE0MDRkMzRjZWYiLCJzaWQiOiI4MmZjNjYzNGIwMzU0MzQ0YTE0YjRlNjYzY2ZlNmJmNyIsInRpZCI6IjI1MWZkYjNhLWY2OWItMTFlYy05M2FmLTAwNTA1NmIzMDI1OSIsInVuYSI6InBvX21pbW9zYUBnbWFpbC5jb20iLCJmbmEiOiJOZ3V54buFbiBC4bqjbyBOZ-G7jWMiLCJuYmYiOjE2ODc0ODM2MTYsImV4cCI6MTY4NzU3MDAxNiwiaWF0IjoxNjg3NDgzNjE2LCJpc3MiOiJNSVNBSlNDIn0.Ihr4fQjPbqEI_GV1a2Ajg-WNg2qCkQI4FUYgMRgRYNM",
+                    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMWM2OTY2NS0yYTgyLTQwNzItOWZiZS0xYTIzNjlkNTkwYjQiLCJkaWQiOiIxNDc5NTFkNC0zZmE1LTRmM2EtYmI2Ny0xNzE0MDRkMzRjZWYiLCJzaWQiOiJiNDhjNDhlZjQxZTQ0MjEyOTY3ZTliYWYzMjUyNDU1ZiIsInRpZCI6IjI1MWZkYjNhLWY2OWItMTFlYy05M2FmLTAwNTA1NmIzMDI1OSIsInVuYSI6InBvX21pbW9zYUBnbWFpbC5jb20iLCJmbmEiOiJOZ3V54buFbiBC4bqjbyBOZ-G7jWMiLCJuYmYiOjE2ODc3NDMxNzgsImV4cCI6MTY4NzgyOTU3OCwiaWF0IjoxNjg3NzQzMTc4LCJpc3MiOiJNSVNBSlNDIn0.LLAXNYNdeQmg4DMHe27fg0MgHuVRIsE8ddOpI0K2RyI",
                     "mimosasessionid": "9d93ad70-3a0e-4e64-9202-298cad21d95b",
                     "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
                     "sec-ch-ua-mobile": "?0",
