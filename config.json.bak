@@ -12,7 +12,7 @@
     {
       "name": "gemini",
       "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
-      "api_key": "AIzaSyCC7_tTjf55R1M8xe7VI3GAxaN2CwPsro4",
+      "api_key": "api key",
       "models": [
         "gemini-3.1-pro-preview",
         "gemini-3-flash-preview",
@@ -29,7 +29,7 @@
     {
       "name": "openrouter",
       "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
-      "api_key": "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",
+      "api_key": "api key",
       "models": [
         "qwen3.6-plus",
         "anthropic/claude-3.7-sonnet",
