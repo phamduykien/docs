@@ -1,0 +1,65 @@
+{
+  "LOG": true,
+  "LOG_LEVEL": "info",
+  "CLAUDE_PATH": "",
+  "HOST": "127.0.0.1",
+  "PORT": 3456,
+  "APIKEY": "",
+  "API_TIMEOUT_MS": "600000",
+  "PROXY_URL": "",
+  "transformers": [],
+  "Providers": [
+    {
+      "name": "gemini",
+      "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
+      "api_key": "AIzaSyCC7_tTjf55R1M8xe7VI3GAxaN2CwPsro4",
+      "models": [
+        "gemini-3.1-pro-preview",
+        "gemini-3-flash-preview",
+        "gemini-3.1-flash-lite-preview",
+        "gemini-2.5-flash",
+        "gemini-2.0-flash"
+      ],
+      "transformer": {
+        "use": [
+          "gemini"
+        ]
+      }
+    },
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "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",
+      "models": [
+        "qwen3.6-plus",
+        "anthropic/claude-3.7-sonnet",
+        "google/gemini-2.5-pro"
+      ],
+      "transformer": {
+        "use": [
+          "openrouter"
+        ]
+      }
+    }
+  ],
+  "StatusLine": {
+    "enabled": false,
+    "currentStyle": "default",
+    "default": {
+      "modules": []
+    },
+    "powerline": {
+      "modules": []
+    }
+  },
+  "Router": {
+    "default": "gemini,gemini-3-flash-preview",
+    "background": "gemini,gemini-3-flash-preview",
+    "think": "gemini,gemini-3.1-pro-preview",
+    "longContext": "gemini,gemini-3.1-pro-preview",
+    "longContextThreshold": 60000,
+    "webSearch": "gemini,gemini-3-flash-preview",
+    "image": ""
+  },
+  "CUSTOM_ROUTER_PATH": ""
+}
